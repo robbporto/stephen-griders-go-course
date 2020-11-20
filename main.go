@@ -2,16 +2,7 @@ package main
 
 func main() {
 	//Slice
-	cards := deck{
-		"Ace of Diamonds",
-		newCard(),
-	}
-
-	cards = append(cards, "Six of Spades")
+	cards := newDeck()
 
 	cards.print()
-}
-
-func newCard() string {
-	return "Five of Diamonds"
 }
